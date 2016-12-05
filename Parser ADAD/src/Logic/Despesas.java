@@ -19,18 +19,22 @@ public class Despesas extends LeitorCSV
 		
 	public void SeparateData() // primeira linha - informacao das colunas
 	{
+		//System.out.println( "Separating file " + ficheiro );
 		for(int index = 1; index < linhas.size(); index++)
 		{
 			String linha = linhas.elementAt(index);
+			//System.out.println("Linha: " + linha);
 			despesas.addElement(new Despesa(linha));
 		}
 	}
 	
 	public void Ver()
 	{
-		for(int index = 1; /*index < 10 &&*/ index < despesas.size(); index++)
+		for(int index = 0; /*index < 10 &&*/ index < despesas.size(); index++)
 		{
 			despesas.elementAt(index).Ver();
 		}
 	}
+	
+	
 }

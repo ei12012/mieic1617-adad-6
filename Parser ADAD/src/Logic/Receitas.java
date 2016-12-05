@@ -4,7 +4,7 @@ import java.util.Vector;
 
 public class Receitas extends LeitorCSV
 {
-public Vector<Receita> receitas;
+	public Vector<Receita> receitas;
 	
 	public Receitas(String ficheiro)
 	{
@@ -25,7 +25,7 @@ public Vector<Receita> receitas;
 	
 	public void Ver()
 	{
-		for(int index = 1; /*index < 10 &&*/ index < linhas.size(); index++)
+		for(int index = 1; /*index < 10 &&*/ index < receitas.size(); index++)
 		{
 			receitas.elementAt(index).Ver();
 		}

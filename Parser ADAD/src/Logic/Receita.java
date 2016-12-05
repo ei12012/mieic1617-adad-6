@@ -6,7 +6,6 @@ public class Receita
 	String codigoPeriodo;
 	int codigoine;
 	String dscautarquia;
-	
 	double receitastotais;
 	double transferenciasorcamentoestado;
 	double financiamentouniaoeuropeia;
@@ -27,6 +26,7 @@ public class Receita
 		codigoPeriodo = colunas[1];
 		codigoine = Integer.parseInt(colunas[2]);
 		dscautarquia = colunas[3];
+		
 		receitastotais = Double.parseDouble(colunas[4]);
 		transferenciasorcamentoestado = Double.parseDouble(colunas[5]);
 		financiamentouniaoeuropeia = Double.parseDouble(colunas[6]);
